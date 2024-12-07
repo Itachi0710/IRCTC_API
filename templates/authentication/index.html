@@ -1,0 +1,214 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <h3>Hello {{ fname }}!</h3>
+    <h4>You're successfully logged in.</h4>
+    <button type="submit"><a href="/book_seat">bookseat</a></button>
+    <button type="submit"><a href="/signout">SignOut</a></button>
+    
+    {% if user.is_superuser %}
+        <br/>
+        <button type="submit"><a href="/add_train">Add Train</a></button>
+    {% endif %}
+{% else %}
+    <button type="submit"><a href="/signup">SignUp</a></button>
+    <br/>
+    <br/>
+    <button type="submit"><a href="/signin">SignIn</a></button>
+{% endif %}
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .premium-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .premium-greeting {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fd390e;
+        }
+        .premium-message {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .premium-button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #fd390e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .premium-button:hover {
+            background-color: #fd390e;
+        }
+        .premium-superuser-button {
+            background-color: #f28b82;
+        }
+        .premium-superuser-button:hover {
+            background-color: #d66a5c;
+        }
+    </style>
+</head>
+<body>
+    <div class="premium-container">
+        {% if user.is_authenticated %}
+            <h3 class="premium-greeting">Hello {{ fname }}!</h3>
+            <h4 class="premium-message">You're successfully logged in.</h4>
+            <a href="/book_seat" class="premium-button">Book Seat</a>
+            <a href="/signout" class="premium-button">Sign Out</a>
+            
+            {% if user.is_superuser %}
+                <br/>
+                <a href="/add_train" class="premium-button premium-superuser-button">Add Train</a>
+            {% endif %}
+        {% else %}
+            <a href="/signup" class="premium-button">Sign Up</a>
+            <br/><br/>
+            <a href="/signin" class="premium-button">Sign In</a>
+        {% endif %}
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .navbar {
+            background-color: #fd390e;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-size: 16px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ffe6e6;
+        }
+        .premium-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .premium-greeting {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fd390e;
+        }
+        .premium-message {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .premium-button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #fd390e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .premium-button:hover {
+            background-color: #e02f0c;
+        }
+        .premium-superuser-button {
+            background-color: #f28b82;
+        }
+        .premium-superuser-button:hover {
+            background-color: #d66a5c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div><a href="/">Home</a></div>
+        <div>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="premium-container">
+        {% if user.is_authenticated %}
+            <h3 class="premium-greeting">Hello {{ fname }}!</h3>
+            <h4 class="premium-message">You're successfully logged in.</h4>
+            <a href="/book_seat" class="premium-button">Book Seat</a>
+            <a href="/signout" class="premium-button">Sign Out</a>
+            
+            {% if user.is_superuser %}
+                <br/>
+                <a href="/add_train" class="premium-button premium-superuser-button">Add Train</a>
+            {% endif %}
+        {% else %}
+            <a href="/signup" class="premium-button">Sign Up</a>
+            <br/><br/>
+            <a href="/signin" class="premium-button">Sign In</a>
+        {% endif %}
+    </div>
+</body>
+</html>
