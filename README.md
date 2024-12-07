@@ -55,10 +55,10 @@
 ![Booked History Page](https://github.com/Itachi0710/IRCTC_API/blob/main/booked%20history.png)
 
 ### 3. Book Seat Page
-![Book Seat Page](https://github.com/ltachi0710/IRCTC_API/blob/main/bookseat.png)
+![Book Seat Page](https://github.com/Itachi0710/IRCTC_API/blob/main/bookseat.png)
 
 ### 4. Normal User Dashboard
-![Normal User Dashboard](https://github.com/ltachi0710/IRCTC_API/blob/main/normal%20user.png)
+![Normal User Dashboard](https://github.com/Itachi0710/IRCTC_API/blob/main/normal%20user.png)
 
 ### 5. No Train Available
 ![No Train Available](https://github.com/Itachi0710/IRCTC_API/blob/main/notrain.png)
@@ -67,16 +67,16 @@
 ![Seat Booked Confirmation](https://github.com/Itachi0710/IRCTC_API/blob/main/seatbooked.png)
 
 ### 7. Signup Page
-![Signup Page](https://github.com/ltachi0710/IRCTC_API/blob/main/signup.png)
+![Signup Page](https://github.com/Itachi0710/IRCTC_API/blob/main/signup.png)
 
 ### 8. Superuser Dashboard
 ![Superuser Dashboard](https://github.com/Itachi0710/IRCTC_API/blob/main/superuser.png)
 
 ### 9. Trains Data Management
-![Trains Data Management](https://github.com/ltachi0710/IRCTC_API/blob/main/trains%20data.png)
+![Trains Data Management](https://github.com/Itachi0710/IRCTC_API/blob/main/trains%20data.png)
 
 ### 10. Users Data Management
-![Users Data Management](https://github.com/ltachi0710/IRCTC_API/blob/main/uersdata.png)
+![Users Data Management](https://github.com/Itachi0710/IRCTC_API/blob/main/uersdata.png)
 
 ---
 
